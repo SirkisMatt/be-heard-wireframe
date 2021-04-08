@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: auto;
   }
   
   .landing-page {
@@ -7,14 +8,14 @@
     sans-serif;
     font-size: 20px;
     color: #444;
-    text-align: center;
     line-height: 1.5;
   }
 
   .header-container {
       width: 100%;
-      height: 600px;
+      height: 800px;
       background-color: rgba(68, 68, 68, 0.575);
+      padding: 45px ;
   }
 
   
@@ -36,35 +37,100 @@
     z-index: 10;
   }
   
-  header {
-    padding: 45px 15px;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 30px 15px;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-  
-  p {
-    margin: 0 auto;
-    max-width: 650px;
-  }
-  
-  p + p {
-    margin-top: 15px;
-  }
-  
-
-  nav a {
+  .logo {
     float: left;
     color: #f2f2f2;
     padding: 1px 10px;
     text-decoration: none;
     font-size: 20px;
-    text-align: right;
   }
+
+  .nav-links a {
+    float: right;
+    color: #f2f2f2;
+    padding: 1px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+  } 
+
+
+  .overlay-header {
+    text-align: left;
+    padding-top: 12rem;
+    position: relative;
+    max-width: 1000px;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .text-placeholder{
+    text-align: center;
+    opacity: .7;
+  }
+
+  .container {
+    padding: 64px;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .width66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+
+  .width33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+
+  .text-right {
+    padding-left: 100px;
+  }
+
+  .img {
+    border: 1px solid #000000;
+    height: 250px;
+    width: 250px;
+    max-width: 100%;
+    margin-right: 20px;
+  }
+
+  .call-to-action-container {
+    margin-top: 30px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #000000;
+  }
+
+  .call-to-action {
+    text-align: center;
+  }
+
+  .content-info {
+    text-align: center;
+  }
+
+   @media screen and (max-width: 1000px) {
+      .width66, .width33 {
+         width: 100%;
+         text-align: center;
+      }
+      img {
+         margin: auto;
+      }
+   }
