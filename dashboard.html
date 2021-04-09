@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,18 +7,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="account-dashboard.css">
+      <link rel="stylesheet" type="text/css" href="dashboard.css">
   </head>
     <body>
         <nav role="navigation" >
             <a class="logo" href="index.html">Logo</a>
             <ul class="nav-links">
-                <li><a href="index.html">Log Out</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
         <div class="incident-btn-container">
             <button class="add-incident-btn">
-                <a href="add-incident/add-incident.html">
+                <a href="add-incident.html">
                     Add Incident
                 </a>
             </button>
@@ -28,32 +30,18 @@
                 <button  value="submit" type="submit" class="search"><i class="fa fa-search"></i></button>
             </div>
             <div class="filter-container">
-                <select name="GoalOptions" id="goal-options">
-                    <option value="gender">
-                        Gender
-                    </option>
-                    <option value="Race">
-                        Race
-                    </option>
-                    <option value="Sexual Assault">
-                        Sexual Assault
-                    </option>
-                    <option value="Physical Assault">
-                        Physical Assault
-                    </option>
-                    <option value="Verbal Assault">
-                        Verbal Assault
-                    </option>
-            </select>
-                <button>Your Incidents</button>
-                <button>Other Incidents</button>
+                <button>Gender</button>
+                <button>Race</button>
+                <button>Sexual Assault</button>
+                <button>Physical Assault</button>
+                <button>Verbal Assault</button>
             </div>
         </form>
         <div id="map" class="text-placeholder">
             <p>map displaying incidents</p>
         </div>
         <div class="container">
-            <h2>List of your incidents</h2>
+            <h2>List of incidents displayed on map</h2>
             <ul class="incident-list">
                 <li>
                     <h3>Incident 1</h3>
@@ -61,7 +49,6 @@
                         Velit non totam ipsa qui sit tempora, eius quas obcaecati voluptas, alias officia deserunt architecto, quo 
                         accusamus libero quam aut assumenda autem.
                     </p>
-                    <button>Edit</button> <button>Delete</button>
                 </li>
                 <li>
                     <h3>Incident 2</h3>
@@ -69,7 +56,6 @@
                         Velit non totam ipsa qui sit tempora, eius quas obcaecati voluptas, alias officia deserunt architecto, quo 
                         accusamus libero quam aut assumenda autem.
                     </p>
-                    <button>Edit</button> <button>Delete</button>
                 </li>
                 <li>
                     <h3>Incident 3</h3>
@@ -77,7 +63,6 @@
                         Velit non totam ipsa qui sit tempora, eius quas obcaecati voluptas, alias officia deserunt architecto, quo 
                         accusamus libero quam aut assumenda autem.
                     </p>
-                    <button>Edit</button> <button>Delete</button>
                 </li>
                 <li>
                     <h3>Incident 4</h3>
@@ -85,7 +70,6 @@
                         Velit non totam ipsa qui sit tempora, eius quas obcaecati voluptas, alias officia deserunt architecto, quo 
                         accusamus libero quam aut assumenda autem.
                     </p>
-                    <button>Edit</button> <button>Delete</button>
                 </li>
             </ul>
         </div>
