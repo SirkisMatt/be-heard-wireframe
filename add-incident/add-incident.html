@@ -1,0 +1,75 @@
+<html lang="en">
+
+  <head>
+      <title>Be Heard wireframe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="add-incident.css">
+  </head>
+    <body>
+        <nav role="navigation" >
+            <a class="logo" href="../index.html">Logo</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Log Out</a></li>
+            </ul>
+        </nav>
+        <div class="form-container">
+            <form>
+                <div class="modal">
+                    <div class="overlay"></div>
+                        <div class="modal_content">
+                            <div class="add-goal">
+                                <label html="goal-type">What type of incident is this?</label>
+                                <select name="GoalOptions" id="goal-options">
+                                        <option value="gender">
+                                            Gender
+                                        </option>
+                                        <option value="Race">
+                                            Race
+                                        </option>
+                                        <option value="Sexual Assault">
+                                            Sexual Assault
+                                        </option>
+                                        <option value="Physical Assault">
+                                            Physical Assault
+                                        </option>
+                                        <option value="Verbal Assault">
+                                            Verbal Assault
+                                        </option>
+                                </select>
+                                <br/>
+                                    <label>Location </label>
+                                    <input placeholder='Whats your goal?' type="text" name='goal-title' id='goal-title' />
+                                    <br/>
+                                    <label>Description: </label>
+                                    <textarea class="description" name="description" rows="10" cols="30" maxLength="100" placeholder='Steps I can take to...' ></textarea>
+                                <br/>
+                                <div>
+                                    <label>Date: </label>
+                                    <input type="date" id="complete_by" name="complete_by"/>
+                                </div>
+                                <br/>
+                                <button class="add_goal_btn" type='button'><a href="../account-dashboard/account-dashboard.html">Add Incident (Go to dashboard)</a></button>
+                                <button class="cancel_btn" type="button">
+                                    Cancel
+                                </button>
+                            </div>
+                            
+                                <button title="Close" class="close_modal">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                        </div>
+                </div>
+                <div class="window" id="search">
+                    <input type="text" placeholder="Search Location" name="search" id="city">
+                    <button  value="submit" type="submit" class="search"><i class="fa fa-search"></i></button>
+                </div>
+                <div id="map" class="text-placeholder">
+                    <p>map to choose location</p>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>

@@ -35,10 +35,30 @@ nav {
   text-decoration: none;
   font-size: 20px;
   text-align: right;
-} 
+}
+
+.incident-btn-container {
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
 
 .add-incident-btn {
-    margin-top: 60px;
+    width: 250px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: red;
+    
+}
+
+.add-incident-btn a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 #search {
@@ -46,13 +66,13 @@ nav {
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 100%;
 }
 
   
-form.window input[type=text] {
+form .window input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -61,7 +81,7 @@ form.window input[type=text] {
     background: #f1f1f1;
 }
   
-form.window button {
+form .window .search {
     float: left;
     width: 20%;
     padding: 10px;
@@ -73,14 +93,31 @@ form.window button {
     cursor: pointer;
 }
   
-form.window button:hover {
+form .window .search:hover {
     background: #5c9b7d;
 }
   
-form.window::after {
+form .window::after {
     content: "";
     clear: both;
     display: table;
+}
+
+.filter-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+   text-align: center;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.filter-container button {
+    width: 170px;
+    height: 40px;
+    background-color: #cccaca;
+    text-align: center;
+    line-height: 1.5;
 }
 
 #map {

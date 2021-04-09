@@ -17,14 +17,25 @@
                 <li><a href="/login/login.html">Login</a></li>
             </ul>
         </nav>
-        <button class="add-incident-btn">
-            <a href="../login/login.html">
-                Be Heard
-            </a>
-        </button>
-        <form class="window" id="search">
-            <input type="text" placeholder="Search City" name="search" id="city">
-            <button  value="submit" type="submit"><i class="fa fa-search"></i></button>
+        <div class="incident-btn-container">
+            <button class="add-incident-btn">
+                <a href="../add-incident/add-incident.html">
+                    Add Incident
+                </a>
+            </button>
+        </div>
+        <form class="form-window">
+            <div class="window" id="search">
+                <input type="text" placeholder="Search Location" name="search" id="city">
+                <button  value="submit" type="submit" class="search"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="filter-container">
+                <button>Gender</button>
+                <button>Race</button>
+                <button>Sexual Assault</button>
+                <button>Physical Assault</button>
+                <button>Verbal Assault</button>
+            </div>
         </form>
         <div id="map" class="text-placeholder">
             <p>map displaying incidents</p>
